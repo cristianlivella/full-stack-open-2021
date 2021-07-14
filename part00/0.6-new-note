@@ -1,0 +1,12 @@
+note over browser:
+- the user writes the note and submits the form
+- the note is added to the unordered list
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over server:
+the server saves the user submitted note
+end note
+
+server->browser: {"message": "note created"}
